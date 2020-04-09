@@ -15,6 +15,18 @@ class PFEditorInput extends PFTextInput {
 		return 'editor';
 	}
 
+	public static function getDefaultPropTypes() {
+		return [];
+	}
+
+	public static function getOtherPropTypesHandled() {
+		return [];
+	}
+
+	public static function getDefaultPropTypeLists() {
+		return [];
+	}
+
 	/**
 	 * @inheritDoc
 	 * @return array[]
