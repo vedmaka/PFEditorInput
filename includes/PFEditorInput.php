@@ -7,10 +7,18 @@ use RequestContext;
 
 class PFEditorInput extends PFTextInput {
 
+	/**
+	 * @inheritDoc
+	 * @return String|null
+	 */
 	public static function getName() {
 		return 'editor';
 	}
 
+	/**
+	 * @inheritDoc
+	 * @return array[]
+	 */
 	public static function getParameters() {
 		$params = parent::getParameters();
 		$params[] = [
@@ -26,11 +34,10 @@ class PFEditorInput extends PFTextInput {
 	 * @return string
 	 */
 	public function getHtmlText() {
-
 		$editor = RequestContext::getMain()->getUser();
-		if( !$editor->isAnon() ) {
+		if ( !$editor->isAnon() ) {
 			if ( isset( $this->mOtherArgs['append'] ) ) {
-				if( $this->mCurrentValue ) {
+				if ( $this->mCurrentValue ) {
 					$sep = isset( $this->mOtherArgs['delimiter'] ) ? $this->mOtherArgs['delimiter'] : ',';
 					$this->mCurrentValue = implode(
 						$sep,
@@ -41,10 +48,10 @@ class PFEditorInput extends PFTextInput {
 							)
 						)
 					);
-				}else{
+				} else {
 					$this->mCurrentValue = $editor->getName();
 				}
-			}else{
+			} else {
 				$this->mCurrentValue = $editor->getName();
 			}
 		}

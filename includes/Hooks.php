@@ -24,7 +24,7 @@ use PFFormPrinter;
 class Hooks {
 
 	/**
-	 * @param PFFormPrinter $formPrinterRef
+	 * @param PFFormPrinter &$formPrinterRef
 	 */
 	public static function onFormPrinterSetup( &$formPrinterRef ) {
 		$formPrinterRef->registerInputType( PFEditorInput::class );
