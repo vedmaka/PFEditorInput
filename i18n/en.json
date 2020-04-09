@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiTeq"
+		]
+	},
+	"pfeditorinput-desc": "An input that stores (appends) current page editor as an input value",
+	"pf_forminputs_editorinput_append": "If edit names need to be appended"
+}

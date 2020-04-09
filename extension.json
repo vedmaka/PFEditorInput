@@ -1,0 +1,38 @@
+{
+	"name": "PFEditorInput",
+	"author": [
+		"WikiTeq"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:PFEditorInput",
+	"descriptionmsg": "pfeditorinput-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\PFEditorInput\\": "includes/"
+	},
+	"config": {},
+	"Hooks": {
+		"PageForms::FormPrinterSetup": "MediaWiki\\Extension\\PFEditorInput\\Hooks::onFormPrinterSetup"
+	},
+	"MessagesDirs": {
+		"PFEditorInput": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "PFEditorInput/resources"
+	},
+	"ResourceModules": {
+		"ext.pfEditorInput": {
+			"dependencies": [],
+			"messages": [],
+			"styles": [],
+			"scripts": []
+		}
+	},
+	"manifest_version": 2
+}

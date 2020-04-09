@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiTeq"
+		]
+	},
+	"pfeditorinput-desc": "{{desc|name=Boilerplate|url=https://www.mediawiki.org/wiki/Extension:PFEditorInput}}",
+	"pf_forminputs_editorinput_append": "Description for the append parameter of the input"
+}
